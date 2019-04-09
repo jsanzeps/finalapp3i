@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'home#landing'
+  get '/contact' => 'home#contact'
+  get '/about_us' => 'home#about'
+  get '/who_we_are' => 'home#who'
+  get '/where_we_are' => 'home#where'
   get 'legal/privacy'
   get 'legal/terms_of_use' => 'legal#terms'
   get 'legal/cookies'
